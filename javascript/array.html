@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+     <script>
+            //3types 
+            //1) by array literal
+            //2) by creating instance of array(using new keyword)
+            //3) by using array constructors
+
+            //1
+            document.write("<h3>1st method</h3>");
+  
+
+            var bike=["honda","hero","yamaha"];
+   for(i=0;i<bike.length;i++)
+{
+    document.write(bike[i]+"<br>");
+    
+}   
+        //2
+        document.write("<h3>2nd method</h3>");
+
+
+        var car=new Array();
+        car[0]="mercedes benz";
+        car[1]="rolls royce";
+        car[2]="lamborgini";
+        for(i=0;i<car.length;i++)
+        {
+            document.write(car[i]+"<br>");
+        } 
+
+        //3
+document.write("<h3>3rd method</h3>");
+
+
+            var food= new Array("puffs","shawai","beef");
+            for(k=0;k<food.length;k++)
+            {
+                    document.write(food[k]+"<br>");
+            }
+          
+     </script>
+</body>
+</html>

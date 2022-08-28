@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window object</title> 
+</head>
+<body>
+    <!--Two types of object model in js 
+    1) browser object model 
+    2) document object model
+  -->
+
+<!--  
+    1)browser object model are 4 types 
+             a)window object 
+
+             window object are 4 types 1)alert()
+                                        2)confirm()
+                                        3)prompt()
+                                        4)open()
+             b)history object
+             c)navigator object
+             d)screen object
+
+
+-->
+
+<div>
+    <button onclick="alerts()">alert function</button>
+    <button onclick="confirms()">confirm</button>
+    <button onclick="prompts()">prompt</button>
+    <button onclick="opened()">open</button>
+</div>
+
+ 
+<script>
+function alerts()
+{
+    alert("it is an alert box");
+}
+
+function confirms()
+{
+    var v= confirm("do you want to delete");
+    
+    if(v==true)
+    {
+        alert("deleted success");
+    }
+    
+    else
+    {
+        alert("cancelled");
+    }
+   
+
+}
+function prompts()
+
+{
+    var a=prompt("who are you");
+    alert("welcome "+a);
+
+}
+function opened()
+{
+    open("http://www.google.com");
+
+}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

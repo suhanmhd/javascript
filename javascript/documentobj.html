@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Molestiae totam rerum eos vero aspernatur sit eum nostrum
+          exercitationem repellendus aliquam. Expedita suscipit accusantium officia.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Molestiae totam rerum eos vero aspernatur sit eum nostrum
+          exercitationem repellendus aliquam. Expedita suscipit accusantium officia.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Molestiae totam rerum eos vero aspernatur sit eum nostrum
+          exercitationem repellendus aliquam. Expedita suscipit accusantium officia.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Molestiae totam rerum eos vero aspernatur sit eum nostrum
+          exercitationem repellendus aliquam. Expedita suscipit accusantium officia.
+    </p>
+    
+    <input type="button" name="" id="" value="how much" onclick="hello()">
+    <form action="" name="formname">
+        <label for="">name:-</label>
+        <input type="text" name="inputname"> <br>
+        <input type="button" value="click here" onclick="printvalue()">
+    </form>
+
+<script>
+    
+    // document.getElementById
+    // document.getElementsByName
+    // document.getElementsByTagName
+    //innerHTML
+    //innerText
+
+
+    function printvalue() //name
+    {
+        var name= document.formname.inputname.value;
+        alert("welcome "+name);
+    }
+
+    function hello() //tagname
+    {
+        var total=document.getElementsByTagName("p");
+        alert("total p tags are "+total.length);
+    }
+
+   
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner html</title>
+    <style>
+        #qwerty {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="hithere()">form</button>
+    <script>
+        function hithere() {
+            var d = "name: <input type='text'> <br> address: <textarea> </textarea>";
+            document.getElementById("qwerty").innerHTML = d;
+        }
+
+    </script>
+                <div id="qwerty">
+
+                </div>
+
+
+                <h3>innerText</h3>
+                <form action="" name="formname">
+
+                    <input type="password" name="passwordinner" id="" onkeyup="passwordchecking()">
+                    <span id="validity">no strength</span>
+            
+            
+            
+                </form>
+
+
+    <script>
+ 
+      function passwordchecking() {
+            var msg;
+            if (document.formname.passwordinner.value.length > 8) {
+                msg = "hard";
+
+            }
+            else if (document.formname.passwordinner.value.length > 5) {
+                msg = "average";
+            }
+            else {
+                msg = "poor";
+            }
+            document.getElementById("validity").innerText = msg;
+        }
+
+    </script>
+
+
+
+
+   
+
+
+</body>
+
+</html>

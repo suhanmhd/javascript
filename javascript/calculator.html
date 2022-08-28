@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" ></script>
+
+<script>
+    function display(values)
+    {
+        document.getElementById("result").value+=values;
+    }
+      
+    function solve()
+    {
+        var a = document.getElementById("result").value;
+        var b = eval(a)
+        document.getElementById("result").value = b;
+    } 
+      
+    function clr()
+    {
+        document.getElementById("result").value = "";
+    }
+ </script>
+
+</head>
+<body>
+    <div class="container">
+<div class="calculator">
+    <div class="calculatordisplay">
+        <input style="width:100% ; background-color: black; color: white;" type="text" id="result">
+    </div>
+    <div class="calculatorkeys">
+        <button class="operator plus  "onclick="display('+')">+</button>
+        <button class="operator minus "onclick="display('-')">-</button>
+        <button class="operator times "onclick="display('*')">&times;</button>             
+        <button class="operator divide" onclick="display('/')">/</button>
+        <button class="number one" onclick="display('1')">1</button>
+        <button class="number two"onclick="display('2')">2</button>
+        <button class="number three "onclick="display('3')">3</button>
+        <button class="number four "onclick="display('4')">4</button>
+        <button class="number five "onclick="display('5')">5</button>
+        <button class="number six "onclick="display('6')">6</button>
+        <button class="number seven "onclick="display('7')">7</button>
+        <button class="number eight "onclick="display('8')">8</button>
+        <button class="number nine "onclick="display('9')">9</button>
+        <button class="number zero "onclick="display('0')">0</button>
+        <button class="number decimal">.</button>
+        <button class="number clear "onclick="clr()">AC</button>
+        <button class="equal" onclick="solve()">=</button>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>

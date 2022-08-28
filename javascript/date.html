@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+</head>
+<body>
+    
+<script>
+    document.write("<h1>Date</h1>");
+ var today = new Date();
+ document.write(today);
+ document.write("<br>");
+ document.write("<br>"); 
+ 
+document.write(new Date());
+
+document.write("<br>");
+document.write("<br>");
+
+ var date= today.getDate();
+ var month= today.getMonth()+1;
+ var year=today.getFullYear();
+
+ document.write(" the date is "+date+"/"+month+"/"+year);
+
+ document.write("<h1>Time</h1>");
+ var h= today.getHours();
+ var m=today.getMinutes();
+ var s=today.getSeconds();
+
+ document.write("timeis "+h+": "+m+": "+s);
+ document.write("<br>");
+
+ </script>
+
+
+</body>
+</html>

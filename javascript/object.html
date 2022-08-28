@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+          
+                          <h2> 3 WAYS</h2>      
+       <p> 1)by object literal <br>
+            2) by creating instance of object directly(using new keyword) <br>
+            3) by using an object constructor (using new keyword) <br> 
+        </p> 
+ 
+    <Script>
+        //by object literal
+          
+            var bike={ name: "honda", model: "cbr", price: 1000}
+
+           document.write(bike.name+"," +bike.model+"," +bike.price);
+
+//by creating instance of object directly(using new keyword) 
+var bus= new Object();
+bus.name="ashok leyland";
+bus.model="ksrtc";
+bus.price="10000";
+document.write( "<br>"+bus.name+","+bus.model+","+bus.price);
+
+
+//by using an object constructor (using new keyword)
+function employee(id,name,salary)
+            {
+                this.id1=id;
+                this.name1=name;
+                this.salary1=salary;
+
+            }
+            emp=new employee(101,"aravind",100);
+            emp1= new employee(102,"reshma",1001);
+            document.write("<br>"+emp.id1+", "+emp.name1+", "+emp.salary1);
+            console.log(emp);
+
+     
+    </Script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<html >
+<head>
+  
+    <title>operators</title>
+</head>
+<body>
+    <script>
+
+        //arithmetic operators
+//comparison or relational operators
+//bitwise operators
+//logical operators
+//assignment operators
+//special operators
+        document.write("<h1>operators</h1>");
+
+
+//arithmetic operators
+document.write("<h3>arithmetic </h3>");
+var a=10;
+var b= 20;
+document.write((a+b)+"<br><br>"); 
+
+document.write((a-b)+"<br><br>");
+
+document.write((a*b)+"<br><br>");
+
+document.write((a/b)+"<br><br>");
+
+document.write((a%b)+"<br><br>");
+
+document.write((a++)+"<br><br>"); 
+
+document.write((a++)+"<br><br>");
+
+document.write((b--)+"<br><br>");
+
+document.write((b--)+"<br><br>");
+
+
+//comparison or relational operators
+document.write("<h3>comparison or relational </h3>");
+var d=10;
+var e="10";
+var f=5;
+document.write((d==e)+"<br><br>"); //equal to
+
+document.write((d===e)+"<br><br>"); //identical
+
+document.write((d!=f)+"<br><br>"); //not equal to
+
+document.write((d!==f)+"<br><br>"); //not identical
+
+document.write((d>f)+"<br><br>"); // greater than
+
+document.write((d<f)+"<br><br>"); // less than
+
+document.write((d>=f)+"<br><br>"); //greater than or equal to
+
+document.write((d<=f)+"<br><br>"); //less than or equal to
+
+//bitwise operators
+document.write("<h3>bitwise operators</h3>");
+
+var g=5;
+var h=10;
+var i=15;
+var j=21;
+
+document.write((g==h & i==j)+"<br><br>"); //bitwise AND
+
+document.write((g==h | i!=j)+"<br><br>"); //bitwise OR
+
+document.write((g==h ^ i!=j)+"<br><br>"); //bitwise XOR
+
+document.write((~h)+"<br><br>"); //bitwise NOT -- -(1+n) 
+
+
+ 
+document.write("<h3>logical operators </h3>");
+
+var k=5;
+var l=5;
+var m=15;
+var n=20;
+
+
+document.write((k==l && m==n)+"<br><br>"); //logical AND
+
+document.write((k==l || m==n)+"<br><br>"); //logical OR
+
+document.write((!k==l)+"<br><br>"); //logical NOT
+
+
+
+
+//aassignment operators
+document.write("<h3>assignment operators</h3>");
+
+var c=5;
+document.write((c+=12)+"<br><br>");
+
+document.write((c-=12)+"<br><br>");
+
+document.write((c*=12)+"<br><br>");
+ 
+document.write((c/=12)+"<br><br>");
+
+document.write((c%=12)+"<br><br>");
+
+
+//special operators
+document.write("<h3>special operators</h3>");
+  
+
+    //typeof //
+    var o=true;
+    document.write((typeof o)+"<br> <br>");
+    //delete
+    var bike={
+        name: "davidson", model: "750"
+    }
+    document.write((bike.name)+"<br> <br>");
+    delete bike.name;
+    document.write((bike.name)+"<br> <br>");
+
+// instanceof
+
+    var city= ["tvm","ndd","vtra"];
+        document.write((city instanceof Array)+"<br> <br>") ;
+
+
+    </script>
+</body>
+</html>
